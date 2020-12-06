@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visina"
+        android:padding="10dp"
+        android:id="@+id/textViewHeight"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sirina"
+        android:id="@+id/textViewWidth"
+        android:padding="10dp"
+        android:layout_below="@+id/textViewHeight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextHeight"
+        android:inputType="number"
+        android:layout_alignBottom="@+id/textViewHeight"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textViewHeight"
+        android:layout_toEndOf="@+id/textViewHeight"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextWidth"
+        android:inputType="number"
+        android:layout_alignBottom="@+id/textViewWidth"
+        android:layout_below="@+id/editTextHeight"
+        android:layout_toRightOf="@+id/textViewWidth"
+        android:layout_toEndOf="@+id/textViewWidth"/>
+
+</RelativeLayout>
